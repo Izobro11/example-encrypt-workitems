@@ -1,4 +1,10 @@
 *** Settings ***
+Documentation        Decrypt and log work items content.
+...                  NOTE: the example work items provided with the
+...                  repository will naturally fail to decrypt unless
+...                  you have the exact same encryption key as we did.
+...                  So please first run the producer to get some of your
+...                  own outputs from it.
 Library     RPA.Robocorp.WorkItems
 Library     RPA.Crypto
 Suite Setup   Get the encryption key
