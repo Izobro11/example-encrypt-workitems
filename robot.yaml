@@ -2,12 +2,15 @@
 # https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
 
 tasks:
-  Produce:
-    robotTaskName: Produce items
-  Consume:
+  Encrypt:
+    # This shows how to suppress logging of item data for FOR loop.
+    shell: python -m robot --flattenkeywords for --report NONE --outputdir output --logtitle "Task log" producer.robot
+  Decrypt:
     robotTaskName: Consume items
   Generate Key:
     robotTaskName: Generate key to Vault
+
+
 
 condaConfigFile: conda.yaml
 
