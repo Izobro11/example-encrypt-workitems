@@ -1,6 +1,6 @@
 # Encrypt work items and prevent logging for sensitive data
  
-Working with sensitive data? This robot example is for you! It shows how to leverage Robocorp's powerful Work Data Management with it's Work Items for managing work queues and parallel execution, but in a way that the sensitive data is not visible in outside of your own environment.
+Working with sensitive data? This robot example is for you! It shows how to leverage Robocorp's powerful [Work Data Management](https://robocorp.com/docs/control-room/unattended/work-data-management) with it's Work Items for managing work queues and parallel execution, but in a way that the sensitive data is not visible in outside of your own environment.
 
 This robot shows two key concepts:
 
@@ -17,7 +17,7 @@ Next run the task `Generate Key` from this repo, from file [keygen.robot](https:
 
 ## Step 2: Encyrpt when creating the work items
 
-The robot uses simplified producer/consumer template, where the producer reads items from the customers.xlsx file, and sends them as work items for the next consumer step. The data in the excel contains (simulated) personal data, and we want to encrypt everything else than the ID. Thus first and last name as well as social security number are not exposed to Control Room even if someone goes and looks for work item data. This is a handy way, as it will leave the ID field readable also in the control room, which will make error detection and bot operations a whole lot easier.
+The robot uses simplified [producer/consumer template](https://robocorp.com/portal/robot/robocorp/template-producer-consumer), where the producer reads items from the customers.xlsx file, and sends them as work items for the next consumer step. The data in the excel contains (simulated) personal data, and we want to encrypt everything else than the ID. Thus first and last name as well as social security number are not exposed to Control Room even if someone goes and looks for work item data. This is a handy way, as it will leave the ID field readable also in the control room, which will make error detection and bot operations a whole lot easier.
 
 First make sure to import the crypto library (in both producer and consumer):
 
