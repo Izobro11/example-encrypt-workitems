@@ -44,7 +44,7 @@ As a result, when creating the output work item there will only be a string full
 
 ![image](https://github.com/robocorp/example-encrypt-workitems/assets/40179958/9815a660-4fea-42e1-9cdd-f3513b613d50)
 
-## Step 3: Decypt when consuming the work items
+## Step 3: Decrypt when consuming the work items
 
 In your consumer bot (after adding the library import and suite setup), it's then easy to go backwards and decrypt the data. Here we have created a separate keyword for decryption, which is only one keyword in itself. This may seem unnecessary, but there is a reason, which is related to suppressing the logging we will look at the next step. So our keyword for decryption looks like this:
 
